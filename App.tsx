@@ -1,15 +1,9 @@
 import React from 'react';
 import { SafeAreaView, StyleSheet, Text, View } from 'react-native';
+import StackNavigator from './src/navigation/StackNavigator';
 
 function App(): React.JSX.Element {
-  return (
-    <SafeAreaView style={styles.container}>
-      {/* 빈 화면 */}
-      <View style={styles.container}>
-        <Text>영광스러운 첫 시작이다~</Text>
-      </View>
-    </SafeAreaView>
-  );
+  return <StackNavigator />;
 }
 
 const styles = StyleSheet.create({
